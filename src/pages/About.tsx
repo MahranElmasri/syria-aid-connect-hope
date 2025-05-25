@@ -28,26 +28,25 @@ const AboutPage: React.FC = () => {
             </p>
           </section>
           <section className="mb-8">
-            <h2 className="text-xl font-semibold text-syria-teal mb-2">How The System Works</h2>
+            <h2 className="text-xl font-semibold text-syria-teal mb-2">{t('about.howItWorks')}</h2>
             <ul className="list-disc ml-8 text-gray-700">
-              <li>Verified medical cases are submitted by individuals or organisations.</li>
-              <li>Donors choose cases to support and donate securely.</li>
-              <li>All donations are tracked, with real-time updates.</li>
-              <li>Our team and partners ensure funds go to the right patients.</li>
+              <li>{t('about.howItWorksSteps.step1')}</li>
+              <li>{t('about.howItWorksSteps.step2')}</li>
+              <li>{t('about.howItWorksSteps.step3')}</li>
             </ul>
           </section>
           <Card className="p-6 bg-white flex flex-col gap-2">
             <div className="flex items-center gap-2 text-syria-teal text-lg font-medium mb-1">
               <Info size={20} /> {t('about.generalInquiries')} / {t('about.contact')}
             </div>
-            <p className="text-gray-700 mb-3">Feel free to contact us with questions or suggestions:</p>
+            <p className="text-gray-700 mb-3">{t('about.contactText')}</p>
             <div className="flex items-center gap-3 text-gray-800">
               <Mail size={18} />{" "}
               <a
                 href="mailto:info@syriahealthcare.com"
                 className="underline hover:text-syria-teal"
               >
-                info@syriahealthcare.com
+                {t('about.email')}
               </a>
             </div>
           </Card>
